@@ -16,6 +16,8 @@ html, body {
     grid-template: 1fr 5fr / 1.5fr 5fr;
 }
 
+/* Header */
+
 .header {
     grid-area: 1/2/1/2;
     display: grid;
@@ -25,7 +27,6 @@ html, body {
 .input-pair {
     padding-left: 20px;
     align-self: center;
-    align-items: center;
 }
 
 .search-button {
@@ -45,16 +46,35 @@ html, body {
 
 .user-nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 65px 130px;
+    justify-items: end;
+    column-gap: 10px;
 }
 
 .notifications {
-    height: 40px;
-    width: 40px;
-    place-self: center;
+    height: 30px;
+    width: 30px;
+    align-self: center;
     background-color: rgba(0,0,0,0);
     border: none;
 }
+
+.user-icon-top {
+    height: 65px;
+    width: 65px;
+    align-self: center;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.user-nav-name {
+    font-size: 1.25rem;
+    font-weight: 700;
+    align-self: center;
+    justify-self: start;
+}
+
+/* Side bar */
 
 .side-bar {
     grid-area: 1/1/3/1;
