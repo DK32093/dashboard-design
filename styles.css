@@ -16,13 +16,15 @@ html, body {
     grid-template: 1fr 5fr / 1.5fr 5fr;
 }
 
-/* Header */
+/* HEADER */
 
 .header {
     grid-area: 1/2/1/2;
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr / 2fr 1fr;
 }
+
+/* Search */
 
 .input-pair {
     padding-left: 20px;
@@ -44,6 +46,8 @@ html, body {
     align-self: center;
 }
 
+/* User nav */
+
 .user-nav {
     display: grid;
     grid-template-columns: 1fr 65px 130px;
@@ -60,8 +64,8 @@ html, body {
 }
 
 .user-icon-top {
-    height: 65px;
-    width: 65px;
+    height: 60px;
+    width: 60px;
     align-self: center;
     background-color: rgba(0,0,0,0);
     border: none;
@@ -72,6 +76,35 @@ html, body {
     font-weight: 700;
     align-self: center;
     justify-self: start;
+}
+
+/* User greeting */
+
+.user-greet {
+    display: grid;
+    grid-template: 1fr / 75px 1fr;
+}
+
+.user-icon-bottom {
+    height: 75px;
+    width: 75px;
+    grid-area: 1/1/3/1;
+    align-self: center;
+    background-color: rgba(0,0,0,0);
+    border: none;
+}
+
+.greet-text {
+    align-content: center;
+}
+
+.greeting {
+    font-size: 0.75rem;
+}
+
+.user-name {
+    font-size: 1.75rem;
+    font-weight: 700;
 }
 
 /* Side bar */
