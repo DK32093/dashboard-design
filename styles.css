@@ -239,11 +239,14 @@ html, body {
 
 .content-right {
     display: grid;
+    grid-template-rows: 330px 330px;
+    row-gap: 10px;
 }
 
 .announcements, .trending {
     display: grid;
     grid-template-rows: 30px 280px;
+    
 }
 
 .card-right {
