@@ -200,7 +200,7 @@ html, body {
     display: grid;
     grid-template: 1fr / 2fr 280px;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
 }
 
 .content-title {
@@ -224,7 +224,16 @@ html, body {
 .card {
     height: 200px;
     background-color: rgb(217, 181, 181);
-    padding: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    -display: grid;
+    -grid-template-rows: 1fr minmax(0, 3fr) 1fr;
+}
+
+.text-box {
+    overflow: scroll;
+    flex: 1
 }
 
 .card-title {
@@ -233,6 +242,16 @@ html, body {
 
 .card-text {
     font-size: 0.8rem;
+}
+
+.card-svgs {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.card-img {
+    fill: #f60909;
 }
 
 /* Announcements and trending */
