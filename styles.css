@@ -227,8 +227,6 @@ html, body {
     padding: 15px;
     display: flex;
     flex-direction: column;
-    -display: grid;
-    -grid-template-rows: 1fr minmax(0, 3fr) 1fr;
 }
 
 .text-box {
@@ -284,4 +282,23 @@ html, body {
 .ann-title {
     font-size: 0.9rem;
     font-weight: 700;
+}
+
+.trend-group {
+    display: flex;
+    align-items: center;
+}
+
+.trend-text {
+    padding-left: 12px;
+   
+}
+
+.trend-user {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.trend-project {
+    font-size: 0.9rem;
 }
